@@ -192,12 +192,14 @@ li{
 !* /GameRoom*!
 
 !* Account *!
-.accountpage{
-  background-color: #46497D;
-  padding: 16px;
-}
+
 !* /Account *!
 
 .players{
   color: #FFFFFF;
 }*/
+
+.accountpage{
+  background-color: #46497D;
+  padding: 16px;
+}
