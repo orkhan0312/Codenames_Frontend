@@ -1,0 +1,14 @@
+.col-sm-6{
+    background:#260023;
+    opacity: 0.8;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    border-radius:6px;
+    padding-bottom:70px;
+}
+
+.form-control-sm{
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    border-radius:4px;
+    width:250px;
+}
