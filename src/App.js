@@ -6,8 +6,8 @@ import Game from "./secure/Game";
 import Createroom from "./secure/Createroom";
 import Account from "./secure/Account";
 import Homepage from "./secure/Homepage";
-import Mainpage from "./secure/Mainpage";
-import Gameroom from "./secure/Gameroom";
+import Mainpage from "./public/Mainpage";
+import ChangePassword from "./secure/ChangePassword";
 
 function App(){
     return (
@@ -15,13 +15,13 @@ function App(){
             <div>
                 <Switch>
                     <Route path="/account" component={Account}/>
-                    <Route path="/gameroom" component={Gameroom}/>
                     <Route path="/createroom" component={Createroom}/>
                     <Route path="/homepage" component={Homepage} />
-                    <Route path="/game" component={Game} />
+                    <Route path="/game/:id" component={Game} />
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
                     <Route path="/" exact component={Mainpage} />
+                    <Route path="/changePassword" exact component={ChangePassword} />
                 </Switch>
             </div>
         </Router>

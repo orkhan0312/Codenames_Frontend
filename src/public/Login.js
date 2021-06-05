@@ -1,13 +1,18 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Button from '../components/Button'
 import Header from '../components/Header'
-import './public.css'
 import {useHistory} from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const history = useHistory();
+
+    /*useEffect(()=>{
+        if(localStorage.getItem('user_token')){
+            history.push('homepage');
+        }
+    })*/
 
     async function signIn(){
         let item = {email, password}
@@ -22,7 +27,7 @@ const Login = () => {
         });
         result = await result.json();
         if(result['data'] != null){
-            localStorage.setItem("token", JSON.stringify(result));
+            localStorage.setItem("user_token", JSON.stringify(result));
             history.push('/homepage');
         }
     }

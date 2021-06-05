@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Header from '../components/Header'
 import {Redirect, useHistory} from 'react-router-dom'
-import './public.css'
 
 function Register(){
     const [name, setName] = useState("");
@@ -11,6 +10,12 @@ function Register(){
     const [password, setPassword] = useState("");
     const [confPass, setConfPass] = useState("");
     const history = useHistory();
+
+    /*useEffect(()=>{
+        if(localStorage.getItem('user_token')){
+            history.push('homepage');
+        }
+    })*/
 
     async function signUp(){
         if(password !== confPass) {
