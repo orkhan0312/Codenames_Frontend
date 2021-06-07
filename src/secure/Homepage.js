@@ -43,14 +43,15 @@ const Homepage = () => {
                     </NavDropdown>
             </Nav>
             <Header title={"Codenames   Online"} size={150} family={"Tulpen One"}/>
-            <Button text='Create Room' width={250} nav='createroom'/>
-            <div className={"rules"}>
-                <label>How to play:</label>
-                <ol type={"1"}>
-                    <li>1. Click on the CREATE ROOM button.</li> <br/>
-                    <li>2. Select the preferred game settings and start the game.</li> <br/>
-                    <li>3. Connect with your friends using your favorite audio or video chat.</li> <br/>
-                    <li>4. Share the room URL with your friends.</li> <br/>
+            <Button text={"Create Room"} width={200} nav='createroom'/>
+            
+            <div className="rule">
+                <ol type={"1"} className="rules">
+                    <li>How to play:</li>
+                    <li>1. Click on the CREATE ROOM button.</li>
+                    <li>2. Select the preferred game settings and start the game.</li> 
+                    <li>3. Connect with your friends using your favorite audio or video chat.</li> 
+                    <li>4. Share the room URL with your friends.</li> 
                     <li>5. Enjoy the game!</li>
                 </ol>
             </div>
